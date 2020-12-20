@@ -1,0 +1,11 @@
+{
+  "url": "https://www.synacktiv.com/en/publications",
+  "title": "Synacktiv | Publications",
+  "item_selectors": {
+    "container": "article",
+    "title": "h2 span",
+    "link": "h2 a",
+    "description": ".content"
+  }
+}
+

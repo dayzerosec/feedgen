@@ -1,0 +1,11 @@
+{
+  "url": "https://secfault-security.com/blog.html",
+  "title": "Secfault-Security",
+  "item_selectors": {
+    "container": "#content ul li",
+    "title": "li",
+    "link": "a",
+    "updated": "a",
+    "updated_format": "January 2, 2006"
+  }
+}

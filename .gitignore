@@ -13,3 +13,12 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Default working directory
+workdir/
+
+# Output feeds
+*.rss
+*.atom
+*.xml
+.idea/

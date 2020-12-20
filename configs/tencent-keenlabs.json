@@ -1,0 +1,12 @@
+{
+  "url": "https://keenlab.tencent.com/en/",
+  "title": "Keen Security Lab (Tencent)",
+  "item_selectors": {
+    "container": ".article",
+    "title": ".article-title",
+    "link": ".article-meta a",
+    "author": ".author-name",
+    "updated": ".article-meta time",
+    "updated_format": "2006-01-02"
+  }
+}

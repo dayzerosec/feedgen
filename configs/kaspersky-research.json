@@ -1,0 +1,10 @@
+{
+  "url": "https://securelist.com/category/research/",
+  "title": "Securelist by Kaspersky - Research",
+  "item_selectors": {
+    "container": ".js-post-items article",
+    "title": "header h3",
+    "link": "a",
+    "author": "footer div ul"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "__comment": "Technically these guys have a feed, but they screw up the dates on it, this keeps correct dates",
+  "url": "https://payatu.com/blog",
+  "title": "Payatu",
+  "item_selectors": {
+    "container": ".single-blog-container",
+    "title": ".title",
+    "link": "div > div:nth-of-type(2) a",
+    "author": ".researchbox span span:nth-of-type(2)",
+    "updated": ".researchbox span span:first-of-type",
+    "updated_format": "2 January 2006"
+  }
+}
