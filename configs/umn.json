@@ -1,0 +1,12 @@
+{
+  "url": "https://cse.umn.edu/cs/latest-research",
+  "title": "University of Minnesota - Computer Science and Engineering",
+  "item_selectors": {
+    "container": ".feature-article",
+    "title": ".news-summary .news-title",
+    "author": ".news-summary p:nth-of-type(2)",
+    "link": ".news-summary .news-title a",
+    "updated": ".news-summary .news-date",
+    "updated_format": "Posted January 02, 2006"
+  }
+}

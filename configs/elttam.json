@@ -1,0 +1,13 @@
+{
+  "url": "https://www.elttam.com/blog/",
+  "title": "elttam",
+  "item_selectors": {
+    "container": ".blog-post",
+    "title": ".post-header h4",
+    "description": ".post-entry",
+    "link": ".post-header h4 a",
+    "author": ".post-meta span:first-of-type",
+    "updated": ".post-meta span:nth-of-type(2)",
+    "updated_format": "January 02, 2006"
+  }
+}

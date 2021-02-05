@@ -1,0 +1,10 @@
+{
+  "url": "https://www-users.cs.umn.edu/~kjlu/#nav-pub",
+  "title": "Kangjie Lu [U. Mn]",
+  "item_selectors": {
+    "container": ".pub-meta",
+    "title": ".pub-title",
+    "link": ".pub-links a:first-of-type",
+    "author": ".pub-author"
+  }
+}
