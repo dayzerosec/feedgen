@@ -226,6 +226,9 @@ func (g *CssGenerator) Feed() (*feeds.Feed, error) {
 				}
 			}
 		}
+		if feedItem.Link == nil {
+			feedItem.Link = feed.Link
+		}
 		if g.itemModFunc != nil {
 			g.itemModFunc(&feedItem)
 		}
