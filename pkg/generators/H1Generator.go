@@ -56,6 +56,9 @@ func (g *H1Generator) Feed() (*feeds.Feed, error) {
 		}{}
 
 		for key, val := range node {
+			if val == nil {
+				continue
+			}
 			switch key {
 			case "reporter":
 				item := val.(map[string]interface{})
