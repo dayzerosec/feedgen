@@ -1,0 +1,11 @@
+{
+  "url": "https://alephsecurity.com/",
+  "title": "Aleph Security - Vulns",
+  "item_selectors": {
+    "container": ".advisorylist ul li",
+    "title": "div + a",
+    "link": "a",
+    "updated": ".advisorylist__date span",
+    "updated_format": "01/02/06"
+  }
+}

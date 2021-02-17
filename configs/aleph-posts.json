@@ -1,0 +1,12 @@
+{
+  "url": "https://alephsecurity.com/",
+  "title": "Aleph Security - Posts",
+  "item_selectors": {
+    "container": ".blog .pagelist ul li",
+    "title": "a:first-of-type",
+    "author": "pagelist__subtitle a:first-of-type",
+    "link": "a:first-of-type",
+    "updated": ".pagelist__date span",
+    "updated_format": "02-Jan 2006"
+  }
+}
