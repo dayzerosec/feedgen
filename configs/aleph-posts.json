@@ -1,6 +1,6 @@
 {
   "url": "https://alephsecurity.com/",
-  "title": "Aleph Security - Posts",
+  "title": "Aleph Research - Posts",
   "item_selectors": {
     "container": ".blog .pagelist ul li",
     "title": "a:first-of-type",

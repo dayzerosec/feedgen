@@ -1,6 +1,6 @@
 {
   "url": "https://alephsecurity.com/",
-  "title": "Aleph Security - Vulns",
+  "title": "Aleph Research - Vulns",
   "item_selectors": {
     "container": ".advisorylist ul li",
     "title": "div + a",
