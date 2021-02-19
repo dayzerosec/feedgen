@@ -5,7 +5,7 @@
   "item_selectors": {
     "container": ".single-blog-container",
     "title": ".title",
-    "link": "div > div:nth-of-type(2) a",
+    "link": "div > div > a",
     "author": ".researchbox span span:nth-of-type(2)",
     "updated": ".researchbox span span:first-of-type",
     "updated_format": "2 January 2006"
