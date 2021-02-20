@@ -99,6 +99,10 @@ func (g *CssGenerator) getText(node *html.Node) (string, error) {
 }
 
 func (g *CssGenerator) getLink(node *html.Node) (string, error) {
+	baseUrl, err := url.Parse(g.Url)
+	if err != nil {
+		log.Fatal(err)
+	}
 	for _, attr := range node.Attr {
 		if strings.ToLower(attr.Key) == "href" {
 			link := attr.Val
@@ -114,7 +118,12 @@ func (g *CssGenerator) getLink(node *html.Node) (string, error) {
 					link = fmt.Sprintf("https://%s%s", urlInfo.Hostname(), link)
 				}
 			} else if !(strings.HasPrefix(link, "https://") || strings.HasPrefix(link, "http://")) {
-				link = fmt.Sprintf("%s/%s", g.Url, link)
+				if u, err := url.Parse(link); err == nil {
+					link = baseUrl.ResolveReference(u).String()
+				} else {
+					log.Println("Unable to resolve URL. Base (%s), Href (%s)", g.Url, link)
+					link = fmt.Sprintf("%s/%s", g.Url, link)
+				}
 			}
 			return link, nil
 		}
