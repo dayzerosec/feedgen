@@ -36,6 +36,10 @@ func main() {
 		g := generators.ProjectZeroGenerator{}
 		g.WorkDir(workDir)
 		gen = &g
+	case "p0rca":
+		g := generators.ProjectZeroRCAGenerator{}
+		g.WorkDir(workDir)
+		gen = &g
 	default:
 		log.Println("Missing valid feed type")
 		flag.Usage()
@@ -44,7 +48,7 @@ func main() {
 
 	feed, err := gen.Feed()
 	if err != nil {
-		log.Println(err.Error())
+		log.Fatalln(err.Error())
 	}
 
 	if outputFile == "-" || outputFile == "" {
@@ -60,6 +64,12 @@ func main() {
 			fmt.Print(out)
 		}
 	} else {
+		if _, err := os.Stat(outputFile); !os.IsNotExist(err) {
+			if err := os.Remove(outputFile); err != nil {
+				log.Fatal(err)
+			}
+		}
+
 		fp, err := os.OpenFile(outputFile, os.O_WRONLY|os.O_CREATE, 0644)
 		if err != nil {
 			log.Fatal(err.Error())
