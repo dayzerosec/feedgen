@@ -73,7 +73,7 @@ func (g *CssGenerator) SetItemContainer(selector string) error {
 	return g.SetItemSelector("Container", selector)
 }
 
-func (g *CssGenerator) getText(node *html.Node) (string, error) {
+func (g *CssGenerator) GetText(node *html.Node) (string, error) {
 	text := bytes.NewBufferString("")
 	html.Render(text, node)
 	tokenizer := html.NewTokenizer(text)
@@ -98,7 +98,7 @@ func (g *CssGenerator) getText(node *html.Node) (string, error) {
 	return builder.String(), nil
 }
 
-func (g *CssGenerator) getLink(node *html.Node) (string, error) {
+func (g *CssGenerator) GetLink(node *html.Node) (string, error) {
 	baseUrl, err := url.Parse(g.Url)
 	if err != nil {
 		log.Fatal(err)
@@ -184,7 +184,7 @@ func (g *CssGenerator) Feed() (*feeds.Feed, error) {
 			if valueNode == nil {
 				continue
 			}
-			textValue, err := g.getText(valueNode)
+			textValue, err := g.GetText(valueNode)
 			textValue = strings.TrimSpace(textValue)
 			if err != nil {
 				return feed, err
@@ -193,7 +193,7 @@ func (g *CssGenerator) Feed() (*feeds.Feed, error) {
 			case "Title":
 				feedItem.Title = textValue
 			case "Link":
-				href, err := g.getLink(valueNode)
+				href, err := g.GetLink(valueNode)
 				if err != nil {
 					log.Println(err.Error())
 				}
