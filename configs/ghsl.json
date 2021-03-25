@@ -1,0 +1,13 @@
+{
+  "url": "https://securitylab.github.com/research/",
+  "title": "GitHub Security Lab",
+  "item_selectors": {
+    "container": ".container-lg>div div:not(:first-of-type)",
+    "title": "div:nth-of-type(2) h4",
+    "author": "div:nth-of-type(2) a",
+    "link": "div:nth-of-type(2) h4 a",
+    "description": "div:nth-of-type(2) p",
+    "updated": "div:first-of-type span",
+    "updated_format": "January 2, 2006"
+  }
+}
