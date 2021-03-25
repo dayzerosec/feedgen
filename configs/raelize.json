@@ -1,0 +1,10 @@
+{
+  "url": "https://raelize.com/blog/",
+  "title": "Raelize",
+  "item_selectors": {
+    "container": "article",
+    "title": "a",
+    "link": "a",
+    "description": "p"
+  }
+}
