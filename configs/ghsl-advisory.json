@@ -1,6 +1,6 @@
 {
-  "url": "https://securitylab.github.com/research/",
-  "title": "GitHub Security Lab - Research",
+  "url": "https://securitylab.github.com/advisories/",
+  "title": "GitHub Security Lab - Advisories",
   "item_selectors": {
     "container": ".container-lg>div div:not(:first-of-type)",
     "title": "div:nth-of-type(2) h4",
