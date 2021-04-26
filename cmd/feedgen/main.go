@@ -40,6 +40,10 @@ func main() {
 		g := generators.ProjectZeroRCAGenerator{}
 		g.WorkDir(workDir)
 		gen = &g
+	case "syzbot":
+		g := generators.SyzbotGenerator{}
+		g.WorkDir(workDir)
+		gen = &g
 	default:
 		log.Println("Missing valid feed type")
 		flag.Usage()
