@@ -7,7 +7,6 @@ import (
 	"github.com/gorilla/feeds"
 	"golang.org/x/net/html"
 	"io/ioutil"
-	"net/http"
 	"os"
 	"sort"
 	"strings"
@@ -76,19 +75,6 @@ func (g *ProjectZeroRCAGenerator) loadState() (projectZeroRCAState, error) {
 	var out projectZeroRCAState
 	err = json.Unmarshal(content, &out)
 	return out, err
-}
-
-func httpGet(url string) (*http.Response, error) {
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
-	client := http.Client{Timeout: 15 * time.Second}
-	res, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	return res, nil
 }
 
 func (g *ProjectZeroRCAGenerator) AddItemSelector(dest *map[string]*cascadia.Selector, name, value string) error {
