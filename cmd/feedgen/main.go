@@ -4,6 +4,7 @@ import (
 	"feedgen/pkg/generators"
 	"flag"
 	"fmt"
+	"github.com/gorilla/feeds"
 	"log"
 	"os"
 	"strings"
@@ -35,6 +36,12 @@ func main() {
 	case "p0":
 		g := generators.ProjectZeroGenerator{}
 		g.WorkDir(workDir)
+
+		// Replace the Created timestamp with the updated time
+		// This way newly disclosed issues appear
+		g.RegisterItemModifier(func(item *feeds.Item) {
+			item.Created = item.Updated
+		})
 		gen = &g
 	case "p0rca":
 		g := generators.ProjectZeroRCAGenerator{}
