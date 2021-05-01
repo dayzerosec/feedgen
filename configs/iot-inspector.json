@@ -1,0 +1,13 @@
+{
+  "url": "https://www.iot-inspector.com/blog/",
+  "title": "SonarSource - Security",
+  "item_selectors": {
+    "container": ".t-entry:not(.t-single-line)",
+    "title": "a",
+    "author": ".t-entry-author .tmb-username-text",
+    "link": "a",
+    "updated": ".t-entry-date a",
+    "updated_format": "January 2, 2006",
+    "description": ".text-excerpt"
+  }
+}
