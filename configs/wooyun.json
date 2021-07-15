@@ -1,0 +1,12 @@
+{
+  "url": "https://wooyun.js.org/",
+  "title": "Wooyun Drop",
+  "item_selectors": {
+    "container": ".container .link",
+    "title": "a:first-of-type",
+    "author": "",
+    "link": "a:first-of-type",
+    "updated": "",
+    "updated_format": ""
+  }
+}
