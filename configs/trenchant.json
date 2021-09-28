@@ -1,0 +1,13 @@
+{
+  "url": "https://trenchant.io/",
+  "title": "Trenchant",
+  "item_selectors": {
+    "container": "article.article",
+    "title": ".article_title a",
+    "link": ".article_title a",
+    "author": "header > address > div",
+    "description": ".article_excerpt",
+    "created": "header > time",
+    "created_format": "January 02, 2006"
+  }
+}
