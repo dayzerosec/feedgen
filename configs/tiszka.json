@@ -1,0 +1,11 @@
+{
+  "url": "https://tiszka.com/",
+  "title": "Brendon Tiszka",
+  "item_selectors": {
+    "container": ".posts li",
+    "title": "a",
+    "link": "a",
+    "created": "time",
+    "created_format": "Jan 02, 2006"
+  }
+}
