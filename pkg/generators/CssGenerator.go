@@ -137,7 +137,18 @@ func (g *CssGenerator) fetch() (string, error) {
 		Timeout: 15 * time.Second,
 	}
 
-	resp, err := client.Get(g.Url)
+	u, err := url.Parse(g.Url)
+	if err != nil {
+		return "", err
+	}
+	resp, err := client.Do(&http.Request{
+		Method: "GET",
+		URL:    u,
+		Header: map[string][]string{
+			"User-Agent": {"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0"},
+		},
+	})
+
 	if err != nil {
 		return "", err
 	}
