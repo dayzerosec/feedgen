@@ -1,0 +1,11 @@
+{
+  "url": "https://talosintelligence.com/vulnerability_reports",
+  "title": "Talos - Vulnerability Reports",
+  "item_selectors": {
+    "container": "#vul-report tbody tr.clickable-row",
+    "title": "td:nth-of-type(2) a",
+    "link": "td:nth-of-type(2) a",
+    "created": "td:nth-of-type(3) a",
+    "created_format": "2006-01-02"
+  }
+}
