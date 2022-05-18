@@ -1,0 +1,12 @@
+{
+  "url": "https://www.pixiepointsecurity.com/blog/",
+  "title": "Pixie Point Security",
+  "item_selectors": {
+    "container": ".blog_content",
+    "title": "h4",
+    "link": "a:last-of-type",
+    "updated": ".entry_post_info a:last-of-type",
+    "updated_format": "Jan 2, 2006",
+    "description": "p:first-of-type"
+  }
+}
