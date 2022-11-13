@@ -51,6 +51,11 @@ func main() {
 		g := generators.SyzbotGenerator{}
 		g.WorkDir(workDir)
 		gen = &g
+	case "pl":
+		g := generators.PentesterLandGenerator{
+			MaxLength: 50,
+		}
+		gen = &g
 	default:
 		log.Println("Missing valid feed type")
 		flag.Usage()

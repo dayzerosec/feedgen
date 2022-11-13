@@ -14,11 +14,12 @@ If you're only interested in the feeds that this already outputs, I generate all
 
 **-f [feed generator type]**
 
-There are currently three supported feed types:
+There are currently five supported feed types:
  
  - `h1` which runs the Hackerone generator, which tracks the [latest disclosed Hacktivity](https://hackerone.com/hacktivity?querystring=&filter=type:public&order_direction=DESC&order_field=latest_disclosable_activity_at&followed_only=false) generator
  - `p0` which runs the ProjectZero generator, which tracks the [Project Zero issues list](https://bugs.chromium.org/p/project-zero/issues/list?q=&can=1&sort=-id). One important note about this one is that the feed does not grab dates so it is only accurate after it has been running. The first feed generated will be be based purely on ids.
  - `p0rca` which runs the Project Zero Root Cause Analysis generator, which tracks the [Project Zero Root Cause Analysis list](https://googleprojectzero.github.io/0days-in-the-wild/rca.html)
+ - `pl` which runs the PentesterLand Writeups generator tracking the writeups published on [Pentester.Land](https://pentester.land/writeups/)
  - `css` is the more generic and useful option. It takes in a config file (json) which defines CSS selectors to match page elements that represent different parts of the feed.
 
 **-t [output type]**
