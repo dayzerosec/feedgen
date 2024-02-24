@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/google/security-research/security/advisories",
+  "title": "Google Security Research Advisories",
+  "item_selectors": {
+    "container": "#advisories div.Box li",
+    "title": "a.Link--primary",
+    "link": "a.Link--primary",
+    "author": "a.author.Link--muted",
+    "updated": "relative-time",
+    "updated_format": "Jan 2, 2006"
+  }
+}
