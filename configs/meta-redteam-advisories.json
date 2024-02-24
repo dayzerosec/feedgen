@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/metaredteam/external-disclosures/security/advisories",
+  "title": "Meta - Red Team X - Advisories",
+  "item_selectors": {
+    "container": "#advisories div.Box li",
+    "title": "a.Link--primary",
+    "link": "a.Link--primary",
+    "author": "a.author.Link--muted",
+    "updated": "relative-time",
+    "updated_format": "Jan 2, 2006"
+  }
+}
