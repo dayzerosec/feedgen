@@ -5,7 +5,9 @@
     "container": "article",
     "title": "h2 span",
     "link": "h2 a",
-    "description": ".content"
+    "description": ".content",
+    "updated": ".content>span",
+    "updated_format": "02/01/2006"
   }
 }
 
