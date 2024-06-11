@@ -56,6 +56,8 @@ func main() {
 			MaxLength: 50,
 		}
 		gen = &g
+	case "asr":
+		gen = &generators.AppleSecurityGenerator{}
 	default:
 		log.Println("Missing valid feed type")
 		flag.Usage()
