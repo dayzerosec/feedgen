@@ -1,0 +1,11 @@
+{
+  "url": "https://jprx.io/",
+  "title": "Joseph Ravichandran",
+  "item_selectors": {
+    "container": "div div",
+    "title": "h2",
+    "link": "h2 a",
+    "updated": "b",
+    "updated_format": "January 2, 2006"
+  }
+}
